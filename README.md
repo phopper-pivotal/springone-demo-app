@@ -40,7 +40,12 @@ Demo app covers following implementations/configurations:
     ```
     $ gradle bootRun -Dspring.profiles.active=dev-local
     ```
-4. SOAP endpoint: http://localhost:8084/ws/Demo.v1_0:demoWS
+4. Spin up [api-sim](https://github.com/nemalipuri/adapter-api-simulator) 
+5. SOAP endpoint: http://localhost:8084/ws/Demo.v1_0:demoWS
+6. Use curl to hit the endpoint
+```sh
+curl --header "Content-Type: text/xml;charset=UTF-8" --data @test-post.soap http://localhost:8084/ws/Demo.v1_0:demoWS
+```
 
 
 ## Sample Request/Response:
