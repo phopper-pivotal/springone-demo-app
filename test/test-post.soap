@@ -1,0 +1,43 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:demo="http://www.dish.com/wsdl/Demo/Demo-v1.0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <demo:getTaxQuoteRequest>
+         <demo:serviceRequestContext>
+            <serviceInteraction>
+               <interactionId>i192351734</interactionId>
+               <interactionProcessName>demo_request</interactionProcessName>
+               <requestId>r9514990</requestId>
+               <interactionStep>test</interactionStep>
+               <customerFacingTool>SOAPUI</customerFacingTool>
+            </serviceInteraction>
+            <serviceClientDetails>
+               <clientAppHost>localhost</clientAppHost>
+               <clientAppTimestamp>2016-07-20T14:25:39.959 MDT</clientAppTimestamp>
+               <!--Optional:-->
+               <endUserIPAddress>?</endUserIPAddress>
+            </serviceClientDetails>
+            <!--Optional:-->
+            <requestReceivedTimestamp>?</requestReceivedTimestamp>
+         </demo:serviceRequestContext>
+         <demo:getTaxQuoteInput>
+            <location>
+               <geographical>
+                  <vertexCode>391110000</vertexCode>
+               </geographical>
+            </location>
+            <itemList>
+               <count>1</count>
+               <!--1 or more repetitions:-->
+               <item>
+                  <identifier>!+</identifier>
+                  <billing>
+                     <charge>99.00</charge>
+                     <!--Optional:-->
+                     <taxGroup>?</taxGroup>
+                  </billing>
+               </item>
+            </itemList>
+         </demo:getTaxQuoteInput>
+      </demo:getTaxQuoteRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
