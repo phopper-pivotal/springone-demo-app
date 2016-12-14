@@ -44,7 +44,7 @@ Demo app covers following implementations/configurations:
 5. SOAP endpoint: http://localhost:8084/ws/Demo.v1_0:demoWS
 6. Use curl to hit the endpoint
 ```sh
-curl --header "Content-Type: text/xml;charset=UTF-8" --data @test-post.soap http://localhost:8084/ws/Demo.v1_0:demoWS
+curl --header "Content-Type: text/xml;charset=UTF-8" --data @/test/test-post.soap http://localhost:8084/ws/Demo.v1_0:demoWS
 ```
 
 
